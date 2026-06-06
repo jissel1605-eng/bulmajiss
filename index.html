@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografía Post-Cuántica (PQC)</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar custom-navbar" role="navigation" aria-label="main navigation">
+            <div class="container">
+                <div class="navbar-brand" style="position: relative;">
+                    <div class="logo-static">
+                        <span class="icon-text">
+                            <span class="icon text-rosa"><i class="fas fa-shield-cat"></i></span>
+                            <span class="has-text-white">Cripto<span style="color: var(--verde-menta);">PQC</span></span>
+                        </span>
+                    </div>
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarPrincipal" style="z-index: 3;">
+                        <span aria-hidden="true" style="color: white;"></span>
+                        <span aria-hidden="true" style="color: white;"></span>
+                        <span aria-hidden="true" style="color: white;"></span>
+                    </a>
+                </div>
+                <div id="navbarPrincipal" class="navbar-menu">
+                    <div class="navbar-end">
+                        <a class="navbar-item" href="#introduccion">Introducción</a>
+                        <a class="navbar-item" href="#pilares">Pilares PQC</a>
+                        <a class="navbar-item" href="#algoritmos">Algoritmos</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero custom-hero is-large" id="introduccion">
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <h1 class="title is-1 has-text-white">Criptografía Post-Cuántica</h1>
+                    <div class="columns is-centered">
+                        <div class="column is-8">
+                            <p class="is-size-5">
+                                Los ordenadores cuánticos del futuro serán capaces de romper la seguridad actual (RSA y ECC). La transición hacia algoritmos inmunes a la computación cuántica ya ha comenzado.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container is-max-desktop mt-6">
+            <div class="columns is-variable is-5" id="pilares">
+                <div class="column is-6">
+                    <div class="box box-rosa" style="height: 100%;">
+                        <div class="mb-3"><span class="badge-rosa">El Problema</span></div>
+                        <h3 class="title is-3 text-rosa">La Threat Cuántica</h3>
+                        <p class="content is-size-5">
+                            Utilizando el famoso <em>Algoritmo de Shor</em>, una computadora cuántica lo suficientemente potente desmantelará la infraestructura de clave pública que protege los bancos, correos y bases de datos actuales.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="column is-6">
+                    <div class="box box-verde" style="height: 100%;">
+                        <div class="mb-3"><span class="badge-verde">La Solución</span></div>
+                        <h3 class="title is-3 text-verde">Defensa Post-Cuántica</h3>
+                        <p class="content is-size-5">
+                            La PQC consiste en diseñar funciones matemáticas que se ejecutan en computadoras normales hoy en día, pero cuyas operaciones son tan complejas que ni una computadora clásica ni una cuántica pueden romperlas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr style="background-color: var(--verde-menta); height: 2px; margin: 4rem 0;">
+
+        <section class="container is-max-desktop mb-6" id="algoritmos">
+            <h2 class="title is-2 has-text-centered text-verde mb-6">Familias de Algoritmos Estándar</h2>
+            <div class="columns is-multiline is-centered">
+                <div class="column is-4">
+                    <div class="custom-card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="Retículos" />
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <p class="title is-4 text-verde">Basada en Retículos</p>
+                            <p class="subtitle is-6 has-text-grey-dark">Geometría multidimensional</p>
+                            <div class="content">
+                                Oculta la información dentro de redes de puntos algebraicos con miles de dimensiones. Es el enfoque favorito del NIST gracias a algoritmos ultraeficientes como <strong>ML-KEM (Kyber)</strong>.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-4">
+                    <div class="custom-card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="Códigos" />
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <p class="title is-4 text-verde">Basada en Códigos</p>
+                            <p class="subtitle is-6 has-text-grey-dark">Corrección de errores</p>
+                            <div class="content">
+                                Inserta errores aleatorios intencionales en un código lineal. Solo quien posea la clave privada conoce la "fórmula" exacta para limpiar el ruido y leer el mensaje original (Esquema McEliece).
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-4">
+                    <div class="custom-card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="Hash" />
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <p class="title is-4 text-verde">Funciones Hash</p>
+                            <p class="subtitle is-6 has-text-grey-dark">Árboles de estado firmas</p>
+                            <div class="content">
+                                Genera firmas digitales utilizando árboles de Merkle basados enteramente en la seguridad de funciones hash como SHA-3. Algoritmos como <strong>SPHINCS+</strong> destacan aquí por su robustez matemática.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer custom-footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>Criptografía Post-Cuántica (PQC)</strong>
+            </p>
+            <p>
+                Construido usando <a href="https://bulma.io/" target="_blank">Bulma CSS</a> y personalizado para máxima estética. © 2026.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            if ($navbarBurgers.length > 0) {
+                $navbarBurgers.forEach( el => {
+                    el.addEventListener('click', () => {
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>

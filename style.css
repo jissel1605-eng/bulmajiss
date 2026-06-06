@@ -1,0 +1,124 @@
+:root {
+    --verde-oscuro: #1b4332;
+    --verde-menta: #52b788;
+    --verde-claro: #d8f3dc;
+    --rosa-fuerte: #ff4d6d;
+    --rosa-pastel: #fff0f3;
+    --rosa-medio: #ff8fa3;
+}
+
+body {
+    background-color: var(--rosa-pastel);
+    color: #2b2d42;
+}
+
+.custom-navbar {
+    background-color: var(--verde-oscuro) !important;
+    position: relative;
+}
+
+.logo-static {
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 0.5rem 0.75rem;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    pointer-events: none;
+    position: relative;
+    z-index: 1;
+}
+
+.custom-navbar .navbar-item {
+    color: #ffffff !important;
+}
+
+.custom-navbar .navbar-item:hover {
+    background-color: var(--verde-menta) !important;
+    color: var(--verde-oscuro) !important;
+}
+
+.custom-hero {
+    background: linear-gradient(135deg, var(--rosa-fuerte) 0%, var(--verde-oscuro) 100%) !important;
+    color: white !important;
+}
+
+.box-rosa {
+    background-color: #ffffff;
+    border-top: 5px solid var(--rosa-fuerte);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(255, 77, 109, 0.1);
+}
+
+.box-verde {
+    background-color: #ffffff;
+    border-top: 5px solid var(--verde-menta);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(82, 183, 136, 0.1);
+}
+
+.custom-card {
+    background-color: white;
+    border: 1px solid var(--rosa-medio);
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.custom-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(82, 183, 136, 0.2);
+    border-color: var(--verde-menta);
+}
+
+.card-content {
+    flex-grow: 1;
+}
+
+.text-rosa {
+    color: var(--rosa-fuerte) !important;
+}
+
+.text-verde {
+    color: var(--verde-oscuro) !important;
+}
+
+.badge-verde {
+    background-color: var(--verde-claro);
+    color: var(--verde-oscuro);
+    padding: 0.25rem 0.7rem;
+    border-radius: 40px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.badge-rosa {
+    background-color: #ffe3e8;
+    color: var(--rosa-fuerte);
+    padding: 0.25rem 0.7rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.custom-footer {
+    background-color: var(--verde-oscuro) !important;
+    color: #e9ecef !important;
+}
+
+.custom-footer strong,
+.custom-footer a {
+    color: var(--rosa-medio) !important;
+}
+
+@media screen and (max-width: 1023px) {
+    .navbar-menu {
+        background-color: var(--verde-oscuro) !important;
+        position: relative;
+        z-index: 2;
+    }
+}
